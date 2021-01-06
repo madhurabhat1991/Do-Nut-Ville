@@ -1,0 +1,49 @@
+﻿.bd-example .carousel .carousel-caption {
+    /*font-family: 'Maiandra GD','Baskerville Old Face',Arial, Helvetica, sans-serif;*/
+    font-size: xx-large;
+    color: black;
+    text-align: left;
+}
+
+.bd-example .carousel .carousel-item {
+    height: 400px;
+}
+
+.bd-example .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*min-height: 300px;*/
+    /*margin-top: -200px;*/
+    opacity: 0.85;
+}
+
+.tag-line {
+    text-align: center;
+    /*font-family: 'Maiandra GD','Baskerville Old Face',Arial, Helvetica, sans-serif;*/
+    padding: 10px;
+    background-color: #FDEBDF;
+}
+
+.img-bar-by {
+    margin: 30px;
+    max-width: 50px;
+}
+
+.bar-by .col-sm {
+    padding: 60px;
+}
+
+.bd-example-2 {
+    background-color: #FDEBDF;
+    padding: 50px;
+}
+
+.bd-example2 .carousel .carousel-item {
+    height: 300px;
+}
+
+.mission {
+    text-align: center;
+    padding: 30px;
+}

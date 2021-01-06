@@ -1,0 +1,161 @@
+﻿@model EmailModel
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="~/css/SharedStyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" asp-action="index">
+                    <img style="width:90px" src="~/images/logos/Donut_Logo.png" />
+                </a>
+                <a class="navbar-brand" asp-action="index">
+                    <h3>Do-Nut-Ville</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        @if (ViewBag.CurrentMenu == "Index")
+                        {
+                            <a class="nav-item nav-link active" asp-action="index">Home <span class="sr-only">(current)</span></a>
+                        }
+                        else
+                        {
+                            <a class="nav-item nav-link" asp-action="index">Home <span class="sr-only">(current)</span></a>
+                        }
+                        @if (ViewBag.CurrentMenu == "Menu")
+                        {
+                            <a class="nav-item nav-link active" asp-action="menu">Menu</a>
+                        }
+                        else
+                        {
+                            <a class="nav-item nav-link" asp-action="menu">Menu</a>
+                        }
+                        @if (ViewBag.CurrentMenu == "Offers")
+                        {
+                            <a class="nav-item nav-link active" asp-action="offers">Offers</a>
+                        }
+                        else
+                        {
+                            <a class="nav-item nav-link" asp-action="offers">Offers</a>
+                        }
+                        @if (ViewBag.CurrentMenu == "Location")
+                        {
+                            <a class="nav-item nav-link active" asp-action="location">Location</a>
+                        }
+                        else
+                        {
+                            <a class="nav-item nav-link" asp-action="location">Location</a>
+                        }
+                        @if (ViewBag.CurrentMenu == "Mug")
+                        {
+                            <a class="nav-item nav-link active" asp-action="mug">Buy Mug</a>
+                        }
+                        else
+                        {
+                            <a class="nav-item nav-link" asp-action="mug">Buy Mug</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+        <div class="footer-band">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img style="width:170px" src="~/images/logos/Donut_Logo.png" />
+                    </div>
+                    <div class="col-sm">
+                        <form method="post" asp-action="Subscribe">
+                            <div class="form-group">
+                                <h5>Subscribe for weekly updates</h5>
+                                <br />
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" asp-for="EmailAddress" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Subscribe</button>
+                                    </div>
+                                </div>
+                                <p style="font-size:small">By submitting your email address you agree to receive promotional emails from Do-Nut-Ville</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm">
+                        <h5>Follow Us</h5>
+                        <br />
+                        <a href="https://www.facebook.com/UHClearLake/" class="location_text"><img class="logo_img" src="~/images/logos/FacebookLogo.png" alt="Facebook logo"></a>&nbsp
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="https://twitter.com/UHClearLake/" class="location_text"><img class="logo_img" src="~/images/logos/TwitterLogo.png" alt="Twitter logo"></a>&nbsp
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/uhclearlake/" class="location_text"><img class="logo_img" src="~/images/logos/InstagramLogo.png" alt="Instagram logo"></a>&nbsp
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/school/university-of-houston-clear-lake/" class="location_text"><img class="logo_img" src="~/images/logos/LinkedinLogo.png" alt="Linkedin logo"></a>&nbsp
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="https://www.youtube.com/user/uhclearlake" class="location_text"><img class="logo_img" src="~/images/logos/YoutubeLogo.png" alt="Youtube logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container quick-links">
+            <div class="row" style="padding:20px;">
+                <div class="col-sm">
+                    <h4>About Us</h4>
+                    <br />
+                    <div>Do-Nut-Ville continues the pride and tradition on delivering the finest Donuts in the business. Do-Nut-Ville is a gourmet product made fresh daily. The company offers excellent customer service, clean stores and friendly employees who love our Donuts as much as our customers do.</div>
+                </div>
+                <div class="col-sm">
+                    <h4>Explore</h4>
+                    <br />
+                    <ul style="border-left: 4px solid #FDD8C1;list-style-type:none;">
+                        <li><a asp-action="menu" class="location_text">Food service</a></li>
+                        <li><a asp-action="location" class="location_text">Distribution</a></li>
+                        <li><a asp-action="offers" class="location_text">Current partners</a></li>
+                        <li><a asp-action="offers" class="location_text">Franchise</a></li>
+                        <li><a asp-action="index" class="location_text">Careers</a></li>
+                        <li><a asp-action="location" class="location_text">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h4>Connect with Us</h4>
+                    <br />
+                    <ul style="border-left: 4px solid #FDD8C1;list-style-type:none;" class="location_text">
+                        <li><img class="logo_img" src="~/images/logos/PhoneLogo.png" alt="Phone logo">&nbsp;&nbsp;&nbsp;281.485.3844</li>
+                        <li><img class="logo_img" src="~/images/logos/EmailLogo.png" alt="Email logo"><a href="mailto:BhatM8403@uhcl.edu" class="location_text">&nbsp;&nbsp;&nbsp;Email</a></li>
+                        <li><a href="https://www.facebook.com/UHClearLake/" class="location_text"><img class="logo_img" src="~/images/logos/FacebookLogo.png" alt="Facebook logo">&nbsp;&nbsp;&nbsp;Facebook</a></li>
+                        <li><a href="https://www.instagram.com/uhclearlake/" class="location_text"><img class="logo_img" src="~/images/logos/InstagramLogo.png" alt="Instagram logo">&nbsp;&nbsp;&nbsp;Instagram</a></li>
+                        <li><a href="https://twitter.com/UHClearLake/" class="location_text"><img class="logo_img" src="~/images/logos/TwitterLogo.png" alt="Twitter logo">&nbsp;&nbsp;&nbsp;Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-center" style="font-size:small">&copy;Copyright 2019 Do-Nut-Ville. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    @RenderSection("Scripts", false)
+
+</body>
+</html>

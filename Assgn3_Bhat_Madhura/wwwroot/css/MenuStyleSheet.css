@@ -1,0 +1,40 @@
+﻿.Menu-top > img {
+    width: 100%;
+}
+
+.menu-section {
+    /*background-color: #FDEBDF;*/
+}
+
+    .menu-section .col-sm-8 {
+        padding: 30px;
+        padding-left: 100px;
+    }
+
+.menu-heading {
+    font-weight: bold;
+}
+
+.menu_name {
+    font-weight: bold;
+}
+
+.menu_desc {
+    padding: 5px;
+    font-style: italic;
+    font-weight: normal;
+    color: darkslategray;
+}
+
+.menu-section .col-sm-4 img {
+    height: 100%;
+    -webkit-transform: scale(1.3);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.menu-section .col-sm-4:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(0.95);
+}

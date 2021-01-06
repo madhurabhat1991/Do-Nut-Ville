@@ -1,0 +1,28 @@
+﻿.location-section {
+    padding: 60px;
+    /*background-color: antiquewhite;*/
+}
+
+.logo_img {
+    width: 25px;
+    opacity: 0.75;
+}
+
+.location_text {
+    text-decoration: none;
+    color: black;
+}
+
+.location-section a:hover {
+    text-decoration: none;
+}
+
+
+.location-section .col-sm-4 .d-block .w-100 img {
+    width: 100%;
+}
+
+.map_img {
+    width: 100%;
+    height: 450px;
+}

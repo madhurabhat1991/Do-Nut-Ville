@@ -1,0 +1,20 @@
+﻿@model EmailModel
+@{
+    ViewData["Title"] = "MugThankYou";
+}
+
+<div class="container" style="padding:100px">
+    <p>Hello <b>@ViewBag.FirstName @ViewBag.LastName</b>, Thank you for submitting the form!</p>
+    <p>Your purchase has been confirmed. Your mug will be sent to you under address:</p>
+    <address>
+        @ViewBag.FirstName @ViewBag.LastName, <br />
+        @ViewBag.StreetAddress, <br />
+        @ViewBag.City, @ViewBag.State - @ViewBag.PostalCode <br />
+    </address>
+    @if (ViewBag.Sample)
+    {
+        <p><i>Enjoy a free sample with this mug purchase!</i></p>
+    }
+</div>
+
+

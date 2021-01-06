@@ -1,0 +1,59 @@
+﻿body {
+    background-color: #FDFDF2;
+    font-family: 'Maiandra GD','Baskerville Old Face',Arial, Helvetica, sans-serif;
+    /*margin: 20px 0px;*/
+    padding-top: 120px;
+    /*padding: 100px;*/
+}
+
+header .bg-light {
+    background-color: #FDD8C1 !important;
+}
+
+header .navbar {
+    /*font-family: 'Maiandra GD','Baskerville Old Face',Arial, Helvetica, sans-serif;*/
+    font-weight: bold;
+    padding: 20px;
+}
+
+header .navbar-brand {
+    font-family: 'Comic Sans MS';
+}
+
+header .navbar-nav {
+    margin-left: auto;
+    margin-right: 1px;
+}
+
+    header .navbar-nav > a {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+footer .footer-band {
+    background-color: #FDD8C1 !important;
+    padding: 50px;
+}
+
+    footer .footer-band .logo_img {
+        width: 30px;
+        opacity: 0.9;
+    }
+
+.location_text {
+    text-decoration: none;
+    color: black;
+}
+
+footer .quick-links {
+    padding: 50px;
+}
+
+.quick-links .logo_img {
+    width: 15px;
+    opacity: 0.9;
+}
+
+.quick-links a:hover {
+    text-decoration: none;
+}
