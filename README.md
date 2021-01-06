@@ -1,5 +1,4 @@
 # Do-Nut-Ville
- ASP .NET Core Website Design - HTML, CSS, Bootstrap, ASP .NET Core
 
 Do-Nut-Ville is a .NET Core MVC website designed for a Donut shop. This implements concepts like; Shared layouts containing menus and footer, User responsive based on screen-size, platform, and orientation, MVC-based form for an online purchase of a merchandise.
 
