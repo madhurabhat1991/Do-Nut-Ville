@@ -36,6 +36,6 @@ Do-Nut-Ville is a .NET Core MVC website designed for a Donut shop. This implemen
 ![image](https://user-images.githubusercontent.com/70220146/120088749-85ba6480-c0b9-11eb-94d8-1915e34dfb7c.png)
 
 #### Buy Mug
-- MVC-based form for an online coffee mug purchase that allows user to input user information before confirming the purchase.
+- MVC-based form for an online coffee mug purchase that allows user to input user information before confirming the purchase
 
 ![image](https://user-images.githubusercontent.com/70220146/120088782-c31ef200-c0b9-11eb-90f4-2d90b41a0e6d.png)
