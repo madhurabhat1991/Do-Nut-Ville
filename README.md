@@ -39,3 +39,9 @@ Do-Nut-Ville is an ASP .NET Core MVC website designed for a Donut shop. This imp
 - MVC-based form for an online coffee mug purchase that allows user to input user information before confirming the purchase
 
 ![image](https://user-images.githubusercontent.com/70220146/120088782-c31ef200-c0b9-11eb-90f4-2d90b41a0e6d.png)
+
+## Execution
+
+- Download the project folder "Assgn3_Bhat_Madhura" to your machine
+- Double click on the solution file "Assgn3_Bhat_Madhura.sln" to open the project using Visual Studio
+- Run the website application using either IIS Express or local IIS setup in your machine
